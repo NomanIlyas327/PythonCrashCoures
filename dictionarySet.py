@@ -53,4 +53,3 @@ for char, count in string_dict.items():
     if count == 1:
         print(f"The first non-repeating character is: '{char}'")
         break
-
