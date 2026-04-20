@@ -1,0 +1,33 @@
+Project - Student Marks & Performance Analyzer
+Project Ka Maqsad:
+Ek text ya CSV file se students ka data read karna, unka average nikalna, grades assign karna, aur results ko ek nayi file mein save karna.
+
+Step 1: Input Data (students.csv)
+Pehle ek file banayein (manually ya code se) jis mein ye data ho:
+
+Code snippet
+Name,Math,Science,English
+Ali,85,90,78
+Hamza,70,65,80
+Zunera,92,88,95
+Rehan,45,50,55
+Step 2: Project Requirements (Logic)
+Aapka code ye kaam karega:
+
+File Reading: csv module ya basic open() function se data read karein.
+
+Data Cleaning: Strings ko integers mein convert karein taake calculation ho sake.
+
+Calculation: Har student ka Average Score nikalen.
+
+Conditional Logic (Grades):
+
+Avg > 80: "A"
+
+Avg > 60: "B"
+
+Avg < 50: "Fail"
+
+NumPy Integration: Poori class ka Mean aur Standard Deviation nikalne ke liye NumPy use karein.
+
+File Writing: Ek nayi file results.txt banayein jis mein har student ka naam aur uska Grade likha ho.

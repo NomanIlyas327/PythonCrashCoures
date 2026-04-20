@@ -1,0 +1,1 @@
+print(f"\nAverage temperature: {avg_temp}")

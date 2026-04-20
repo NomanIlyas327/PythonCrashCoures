@@ -1,0 +1,10 @@
+--- Student Performance Report ---
+
+Ali | Avg:84.33 | Grade A
+Hamza | Avg:71.67 | Grade B
+Zunera | Avg:91.67 | Grade A
+Rehan | Avg:50.00 | Grade Fail
+
+--- Class Summary ---
+Class Average: 74.42
+Class Std Dev: 15.81

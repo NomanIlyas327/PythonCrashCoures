@@ -1,0 +1,45 @@
+import csv
+import numpy as np
+
+# Poori class ke averages store karne ke liye list
+all_averages = []
+
+# File read karna
+try:
+    with open(r"Project - Student Marks & Performance Analyzer\students.csv", "r") as file:
+        lines = file.readlines()
+
+    # Results file ko loop se pehle open karein taake header ek hi baar likha jaye
+    with open(r"Project - Student Marks & Performance Analyzer\results.txt", "w") as result_file:
+        result_file.write("--- Student Performance Report ---\n\n")
+
+        for line in lines[1:]:
+            row = line.strip().split(",")
+            if len(row) == 4:
+                name = row[0]
+                math, science, english = int(row[1]), int(row[2]), int(row[3])
+                
+                average = np.mean([math, science, english]) # NumPy se average calculate karein
+                all_averages.append(average) # List mein add karein
+                
+                # Grade logic
+                if average >= 80: grade = "A"
+                elif average >= 60: grade = "B"
+                else: grade = "Fail"
+
+                # Console aur File dono mein output
+                output = f"{name} | Avg: {average:.2f} | Grade: {grade}\n"
+                print(output.strip())
+                result_file.write(output)
+
+        # LOOP KE BAHAR: Poori class ka NumPy analysis
+        if all_averages:
+            class_mean = np.mean(all_averages)
+            class_std = np.std(all_averages)
+            
+            summary = f"\n--- Class Summary ---\nMean: {class_mean:.2f}\nSTD: {class_std:.2f}"
+            print(summary)
+            result_file.write(summary)
+
+except FileNotFoundError:
+    print("Error: 'students.csv' nahi mili!")

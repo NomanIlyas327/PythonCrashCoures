@@ -1,0 +1,2 @@
+data.split(",")
+# print(data)

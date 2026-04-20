@@ -1,0 +1,16 @@
+Ali ka Average Score: 84.33
+Ali Grade: A
+Mean: 253.0
+Standard Deviation: 0.0
+Hamza ka Average Score: 71.67
+Hamza Grade: B
+Mean: 215.0
+Standard Deviation: 0.0
+Zunera ka Average Score: 91.67
+Zunera Grade: A
+Mean: 275.0
+Standard Deviation: 0.0
+Rehan ka Average Score: 50.00
+Rehan Fail.....
+Mean: 150.0
+Standard Deviation: 0.0

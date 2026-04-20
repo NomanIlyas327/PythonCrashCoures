@@ -1,0 +1,6 @@
+{
+    "learning_rate": 0.01,
+    "batch_size": 32,
+    "num_epochs": 50
+}
+// This is a comment added to the JSON file.

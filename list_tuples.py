@@ -1,6 +1,72 @@
+hobbies = ["Coding", "Gaming", "Reading"]
+hobbies.append("Swiming")
+print(hobbies)
+hobbies[1] = "Machine Learning"
+print(hobbies)
+
+# pi_value = (3.14, 22/7)
+# print(pi_value)
+# pi_value[0] = 3
+
+
+data = [("Ali", 20), ("Sara", 22)]
+data.append(("Zain" , 25))
+print(data)
+
+# 2. Practice Task: The "Data Cleaner" (Intermediate)
+raw_data = [999, 10, 20, 30, 40, 50, -999]
+split_raw_data = raw_data[1:-1]
+print(tuple(split_raw_data))
+split_raw_data_tuple = tuple(split_raw_data)
+print(split_raw_data_tuple)
+
+# 3. Practice Task: The "To-Do Manager" (List Methods)
+
+tasks = []
+tasks.extend(["code", "eat", "sleep"])
+print(tasks)
+print("Eat Ka index :", tasks.index("eat"))
+tasks.remove("sleep")
+print(tasks)
+if "gym" in tasks:
+    print("Yes! gym is in tasks list")
+else:
+    print("No! gym in not in the task list")
+
+
+# . Practice Task: "The Secure System" (Tuple)
+user_info = ("admin", "12345", "Pakistan")
+# user_info[1] = "0000"  # This would cause a TypeError
+# File "e:\Github\PythonCrashCoures\list_tuples.py", line 39, in <module>
+#     user_info[1] = "0000"
+#     ~~~~~~~~~^^^
+# TypeError: 'tuple' object does not support item assignment
+username = user_info[0]
+print(f"Username: {username}")
+
+
+# Aaj ka Modified Task (Day 3 Practice):
+# Ek list banayen: marks = [45, 78, 90, 33, 65].
+
+# .append() use karke aakhir mein 100 add karein.
+
+# .pop(0) use karke pehla number delete karein.
+
+# Index use karte hue 33 ko badal kar 55 kar dein.
+
+# print(marks) karke dekhein kya results aate hain.
+
+
+marks = [45, 78, 90, 33, 65]
+marks.append(100)
+marks.pop(0)
+marks[2] = 55
+print(marks)    
+
 friends = ["Asad", "Abdul Moizz", "Zunera", "Ayesha", "Hira"]
 week_days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
 print(friends)
+print(friends[::-1])
 print(week_days)
 print(friends[0])
 print(week_days[2])
