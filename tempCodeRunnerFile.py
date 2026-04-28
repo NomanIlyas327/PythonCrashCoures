@@ -1,2 +1,1 @@
-data.split(",")
-# print(data)
+item_name = input("Enter the name of item : ")
